@@ -12,6 +12,9 @@ export class UsersService {
         return this._userRepo.save(user)
     }
     findUser(id:number) {
+        if (!id) {
+            throw new NotFoundException('User Not Found')
+        }
         return this._userRepo.findOneBy({id})
     }
 

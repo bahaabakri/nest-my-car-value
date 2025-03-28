@@ -3,7 +3,7 @@ POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-    "email": "bbbbbb@gmail.com",
+    "email": "bbbbfgdfgdgbb@gmail.com",
     "password": "bbbbbbb"
 }
 
@@ -13,10 +13,15 @@ POST http://localhost:3000/auth/signin
 content-type: application/json
 
 {
-    "email": "bbbbbb@gmail.com",
-    "password": "bbbbbbbb"
+    "email": "bbbbdfgdgbb@gmail.com",
+    "password": "bbbbbbb"
 }
 
+### sign out
+POST http://localhost:3000/auth/signout
+
+### get signed in user data
+GET http://localhost:3000/auth/me
 ### get user by id
 
 GET http://localhost:3000/auth/2
@@ -38,3 +43,10 @@ content-type: application/json
 ### remove user
 
 DELETE http://localhost:3000/auth/5
+
+# ### test session set
+# GET http://localhost:3000/colors/ggg
+
+
+# ### test session get
+# GET http://localhost:3000/colors
